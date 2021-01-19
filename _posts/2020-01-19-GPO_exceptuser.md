@@ -1,0 +1,26 @@
+---
+layout: single
+title: "그룹 정책 개체에 대해 일부 사용자 예외 설정"
+description: "그룹 정책 일부 사용자 예외 처리"
+categories: [Windows]
+tags: [Windows, ActiveDirectory, AD, GPO]
+redirect_from:
+  - /2021/01/19/
+---
+# [GPO] 그룹 정책 개체에 대해 일부 사용자 예외 설정
+특정 그룹 정책을 간혹 테스트 등의 이유로 예외 처리를 할 사용자가 생길 수 있다.  
+별도의 OU를 생성하여 관리해도 되지만 그게 불가능한 경우 사용 가능한 예외 처리 방법이다.
+
+예를 들어 모든 사용자들은 Windows 제어판을 차단하여 사용 못하지만, 관리 상의 이유로 특정 유저는 제어판을 허용하는 상황 같은 경우
+
+## 방법
+1.  수정할 그룹 정책을 클릭한 후 위임 탭을 클릭한다.
+2.  위임 탭에서 고급을 누른 뒤 화면과 같이 예외 처리할 사용자를 추가한다.  
+    \-> 가능하면 그룹을 만들어서 관리하는 것이 편할 것이다.
+3.  예외 될 사용자에게는 **그룹 정책 적용** 권한을 **거부**에 체크한다.  
+    [##_Image|kage@F8w5Q/btqTkh1IqTA/gfp1bWNYTEzaftn3Ah9kOK/img.jpg|alignCenter|width="100%" data-origin-width="769" data-origin-height="552" data-ke-mobilestyle="widthContent"|||_##]
+
+## 확인
+-   그룹 정책 적용 권한이 기본 값인 경우: 정책 적용이 된 상태  
+
+-   그룹 정책 적용 권한이 거부인 경우: 정책이 적용되지 않는 걸 볼 수 있다.  
