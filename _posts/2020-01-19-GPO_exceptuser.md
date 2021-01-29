@@ -18,9 +18,7 @@ redirect_from:
 2.  위임 탭에서 고급을 누른 뒤 화면과 같이 예외 처리할 사용자를 추가한다.  
     \-> 가능하면 그룹을 만들어서 관리하는 것이 편할 것이다.
 3.  예외 될 사용자에게는 **그룹 정책 적용** 권한을 **거부**에 체크한다.  
-    [##_Image|kage@F8w5Q/btqTkh1IqTA/gfp1bWNYTEzaftn3Ah9kOK/img.jpg|alignCenter|width="100%" data-origin-width="769" data-origin-height="552" data-ke-mobilestyle="widthContent"|||_##]
 
 ## 확인
 -   그룹 정책 적용 권한이 기본 값인 경우: 정책 적용이 된 상태  
-
 -   그룹 정책 적용 권한이 거부인 경우: 정책이 적용되지 않는 걸 볼 수 있다.  
